@@ -1,0 +1,393 @@
+<!doctype html>
+<!-- INFO1005 Website Design — Module 3.1 completed Maggie Simpson example -->
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gabriel Modica responsive creative portfolio demonstration">
+  <meta name="author" content="INFO1005 Website Design">
+  <title>Gabriel Modica | Creative Portfolio</title>
+
+  <!-- FAVICON — already supplied. Later replace these with your own favicon files. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS comes last so it can style Bootstrap components. -->
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Navigation Header-->
+<nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Main navigation">
+  <div class="container-fluid">
+    <img src="img/cloud.png" class="img-fluid" alt="Website Logo" width="50" height="50">
+    <a class="navbar-brand" href="#top" aria-label="Gabriel Modica home">
+      <h3><span class="d-sm-inline"><b>Gabriel Modica</b></span></h3>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!--Navigation Buttons-->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contactme">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="pdf/Resume_Design.pdf" target="_blank">Resume</a></li>
+      </ul>
+
+      <!--Dark Mode-->
+      <div class="form-check form-switch theme-switch">
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Current theme: light"
+               id="themeSwitch" aria-label="Toggle dark mode">
+         <label class="form-check-label bi bi-sun-fill" for="themeSwitch" id="themeLabel"></label>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  
+  <header class="container hero-section">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-lg-7">
+        
+        <!--Typing Animation-->
+        <h2 class="typing-heading">
+          <span class="typewrite"
+                data-words='["Network Security","Programmer","Database Designer"]'
+                aria-live="polite"></span>
+        </h2>
+        
+        <!--Website Header-->
+        <h1>Cybersecurity Analyst</h1>
+
+        <p class="lead-copy">My name is <b>Gabriel Modica</b>, and my objective is to program functions within a coding language, and create a fully functional program.</p>
+        <div class="hero-actions">
+          <a class="btn btn-brand" href="#portfolio">View portfolio</a>
+          <a class="btn btn-ghost" href="pdf/Resume_Design.pdf" target="_blank">Open resume</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <aside class="profile-summary" aria-labelledby="profile-summary-title">
+          <div class="profile-summary-header">
+            <div>
+              <p class="profile-summary-kicker">Profile Summary</p>
+              <h2 class="profile-summary-name" id="profile-summary-title">Gabriel Modica</h2>
+            </div>
+            <span class="profile-summary-status">ICT Student</span>
+          </div>
+          
+          <!--Profile Summary -->
+          <div class="profile-summary-items">
+            <section class="profile-summary-item">
+              <h3>Education</h3>
+              <p>Diploma of ICT, Western Sydney University</p>
+            </section>
+            <section class="profile-summary-item">
+              <h3>Portfolio Projects</h3>
+              <p>Networking, database design, and Java programming</p>
+            </section>
+            <section class="profile-summary-item">
+              <h3>Current Focus</h3>
+              <p>Cybersecurity, network security, and programming</p>
+            </section>
+            <section class="profile-summary-item">
+              <h3>Experience</h3>
+              <p>Diploma coursework of networking, mathematics, database management, and programming.</p>
+            </section>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT — cards are review from Module 2.2 / 2.3 -->
+  <section class="container section-block" id="aboutme">
+    <div class="section-intro">
+      <h2>About</h2>
+      <p><span class="eyebrow">Details of my personal journey.</span></p>
+    </div>
+
+    <!-- About Cards -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <article class="card h-100 feature-card">
+          <img src="img/imageforwebsiteme.png" class="card-img-top" alt="Stylized Image of Me">
+          <div class="card-body">
+            <h3 class="card-title">Introduction</h3>
+            <p class="card-text">I've always been interested in the fundamentals of <span class="standout">cybersecurity</span>, <b>computer networking</b> and <b>PC modding</b>.</p>
+            <p class="card-text d-none d-lg-block">I have expanded my skills that also focus on <b>networking</b>, <b>database designer</b>, and <b>programming</b>. With the expanding AI technology, malwares bloomed aiming to breach a user's device and exploit it for their own gain, which is why I have also focused on the <span class="standout">tools of cybersecurity</span>.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 feature-card">
+          <img src="img/imageforwebsiteeducation2edited.png" class="card-img-top"  alt="Education portfolio image">
+          <div class="card-body">
+            <h3 class="card-title">Education</h3>
+            <div class="education-detail">
+              <h6>Diploma of ICT</h6>
+              <p class="education-institution">Western Sydney University</p>
+              <p>The diploma covers various aspects of information and communication technology, including networking, database management, and programming.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Skills Section-->
+      <div class="col">
+        <article class="card h-100 feature-card">
+          <img src="img/imageforwebsiteskills.png" class="card-img-top" alt="Skills portfolio image">
+          <div class="card-body">
+            <h3 class="card-title">Skills</h3>
+            <p class="card-text">I have worked on <b>databases</b>, <b>networking</b>, and <b>programming</b> within the javascript environment.</p>
+            <div class="skill-meter"><span style="width:70%">Network Management 70%</span></div>
+            <div class="skill-meter"><span style="width:60%">Database Design 60%</span></div>
+            <div class="skill-meter"><span style="width:50%">Java Language 50%</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section of the Webpage -->
+  <section class="container section-block" id="portfolio">
+    <div class="section-intro">
+      <h2>Portfolio</h2>
+      <p> <span class="eyebrow">Projects and Professional Work.</span></p>
+    </div>
+
+    <!-- Portfolio Cards -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="img/portfolio1.jpg" class="card-img-top" alt="Networking project thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Networking</h3>
+            <p class="card-text">My completed networking CISCO modules showcasing my knowledge in networking.</p>
+            <button type="button" class="btn btn-brand"
+                    onclick="window.open('img/Cisco_Screenshot.png', '_blank')"
+                    data-bs-toggle="modal" 
+                    data-project-src="img/portfolio1.jpg"
+                    data-project-title="Networking"
+                    data-project-description="Networking project exploring robust network architecture design and implementation.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="img/portfolio2.jpg" class="card-img-top" alt="Database Design project thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Database Design</h3>
+            <p class="card-text">Designs of the database structure and schema that work in tangent with each other.</p>
+            <button type="button" class="btn btn-brand"
+                    onclick="window.open('pdf/GabrielModica_CaseStudy_Database.pdf', '_blank')"
+                    data-project-src="img/portfolio2.jpg"
+                    data-project-title="Database Design"
+                    data-project-description="A study on database design principles and implementation.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="img/portfolio3.jpg" class="card-img-top" alt="Programming project thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Programming</h3>
+            <p class="card-text">Java language project demonstrating coding skills and logic within programming scenarios.</p>
+            <button type="button" class="btn btn-brand"
+                    onclick="window.open('pdf/GabrielModica_CaseStudy_Programming.pdf', '_blank')"
+                    data-project-src="img/portfolio3.jpg"
+                    data-project-title="Programming"
+                    data-project-description="A programming project demonstrating problem-solving and code implementation.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Experience Section of the Webpage-->
+  <section class="container section-block" id="experience">
+    <div class="section-intro courses-intro">
+      <h2>Experience</h2>
+      <p> <span class="eyebrow">Academic and professional development.</span></p>
+    </div>
+
+    <!-- Experience Cards -->
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+      <div class="col">
+        <article class="card h-100 course-card">
+          <div class="card-body">
+            <span class="course-tag">Diploma Coursework</span>
+            <h3 class="course-title">Networking and Security</h3>
+            <p class="course-provider">Western Sydney University</p>
+            <p class="card-text">Developing practical knowledge of network fundamentals and responsible security practices.</p>
+            <ul class="course-topics">
+              <li>Network design and administration</li>
+              <li>Security principles and access management</li>
+              <li>Monitoring and secure configuration</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 course-card">
+          <div class="card-body">
+            <span class="course-tag">Diploma Coursework</span>
+            <h3 class="course-title">Database and Programming</h3>
+            <p class="course-provider">Western Sydney University</p>
+            <p class="card-text">Building core skills in organizing data and creating software through coursework projects.</p>
+            <ul class="course-topics">
+              <li>Database structure and design</li>
+              <li>Java programming fundamentals</li>
+              <li>Responsive website development</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="col offset-lg-3">
+        <article class="card h-100 course-card">
+          <div class="card-body">
+            <span class="course-tag">Diploma Coursework</span>
+            <h3 class="course-title">Mathematics for ICT</h3>
+            <p class="course-provider">Western Sydney University</p>
+            <p class="card-text">Using mathematical reasoning to support problem-solving across information technology coursework.</p>
+            <ul class="course-topics">
+              <li>Logical and analytical thinking</li>
+              <li>Numerical problem-solving</li>
+              <li>Applying maths to technical concepts</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section of the Webpage -->
+  <section class="container section-block" id="services">
+    <div class="section-intro">
+      <h2>Services</h2>
+      <p> <span class="eyebrow">Professional services I can offer to clients and employers.</span></p>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <article class="service-card">
+          <i class="bi bi-reception-4 service-card-icon" aria-hidden="true"></i>
+          <h3>Networking</h3>
+          <p>Implementation of robust network architectures to facilitate seamless communication and data transfer.</p>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="service-card">
+          <i class="bi bi-database service-card-icon" aria-hidden="true"></i>
+          <h3>Database Structure</h3>
+          <p>Design and optimize database schemas to ensure efficient data storage and retrieval.</p>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="service-card">
+          <i class="bi bi-filetype-java service-card-icon" aria-hidden="true"></i>
+          <h3>Java Programming</h3>
+          <p>Programming projects using the java language for softwares, applications, or scripts within websites.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM — HTML + basic Bootstrap grid/form classes -->
+  <section class="container section-block" id="contactme">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 contact-details">
+        <h2>Contact</h2>
+        <p class="lead">Get in touch with me for inquiries or project collaborations.</p>
+        <nav class="contact-social-links" aria-label="Contact links">
+          <a href="https://www.linkedin.com/in/gabrielmodica/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:mrtislliopn@gmail.com" aria-label="Email">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+          </a>
+        </nav>
+      </div>
+      </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+    <p>&copy; Copyright 2026 Gabriel Modica. All Rights Reserved</p>
+    <p class="social-links">
+      <a href="https://www.linkedin.com/in/gabrielmodica/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:mrtislliopn@gmail.com" target="_blank" aria-label="Email"><i class="bi bi-envelope"></i></a>
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap powers collapse, modal, accordion and carousel. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+  const projectButtons = document.querySelectorAll('.open-lightbox');
+  const projectImage = document.querySelector('#modalProjectImage');
+  const projectTitle = document.querySelector('#projectLightboxLabel');
+  const projectDescription = document.querySelector('#modalProjectDescription');
+
+  projectButtons.forEach(function(button) {
+    button.addEventListener('click', function () {
+      projectImage.src = this.dataset.projectSrc;
+      projectImage.alt = this.dataset.projectTitle + ' full image';
+      projectTitle.textContent = this.dataset.projectTitle;
+      projectDescription.textContent = this.dataset.projectDescription;
+    });
+  });
+
+  
+</script>
+
+</body>
+</html>
